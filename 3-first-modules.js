@@ -5,7 +5,8 @@ const names = require("./4-names");
 // destructure
 // const { john, peter } = require("./4-names");
 
-const sayHi = require("./5-utils");
+
+console.log(data, "data");
 
 sayHi("Susan");
 

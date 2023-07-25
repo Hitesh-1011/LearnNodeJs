@@ -1,7 +1,17 @@
-console.log("First Project running successfully");
+const names = require("./4-names");
+// destructure
+// const { john, peter } = require("./4-names");
 
-console.log(__dirname);
+const sayHi = require("./5-utils");
 
-console.log(__filename);
+const data = require("./6-alternative-flavour");
 
-console.log(require.main.loaded)
+require("./7-mind-grenade");
+
+console.log(data, "data");
+
+sayHi("Susan");
+
+sayHi(names.john);
+
+sayHi(names.peter);
