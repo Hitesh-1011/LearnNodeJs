@@ -1,17 +1,15 @@
-const names = require("./4-names");
-// destructure
-// const { john, peter } = require("./4-names");
+const path = require("path");
 
-const sayHi = require("./5-utils");
+console.log("path : ", path.sep);
 
-const data = require("./6-alternative-flavour");
+const filePath = path.join("/content/", "subfolder", "test.text");
 
-require("./7-mind-grenade");
+console.log("filePath : ", filePath);
 
-console.log(data, "data");
+const base = path.basename(filePath);
 
-sayHi("Susan");
+console.log("base : ", base);
 
-sayHi(names.john);
+const absolute = path.resolve(__dirname, "content", "subfolder", "test.text");
 
-sayHi(names.peter);
+console.log("absolute : ", absolute);

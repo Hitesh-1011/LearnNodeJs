@@ -9,6 +9,8 @@ const sayHi = (name) => {
   console.log(`hello there ${name}`);
 };
 
+require("./7-mind-grenade");
+
 sayHi("Susan");
 
 sayHi(john);
